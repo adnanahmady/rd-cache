@@ -1,0 +1,21 @@
+{
+    "name": "adnanahmady/rd-caching",
+    "description": "Russion doll caching for laravel php framework.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "adnan ahmady",
+            "email": "adnan.ahmady1394@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^7.0@dev",
+        "phpunit/phpunit": "8.5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "RD\\": "src/"
+        }
+    }
+}
