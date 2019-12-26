@@ -2,7 +2,7 @@
 
 namespace RD\Traits;
 
-trait Cachable {
+trait Cacheable {
     public function getCacheKey()
     {
         return sprintf('%s/%s-%s',

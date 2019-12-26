@@ -5,7 +5,7 @@ namespace RD\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Cache;
 
-class CacheControlMiddleware
+class FlushViews
 {
     /**
      * Handle an incoming request.

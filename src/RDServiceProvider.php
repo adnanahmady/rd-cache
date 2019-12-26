@@ -14,7 +14,9 @@ class RDServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton(Directive::class, function() {
+            return new Directive();
+        });
     }
 
     /**
@@ -25,11 +27,11 @@ class RDServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('cache', function ($expression) {
-            return "<?php if (! RD\Caching\RussianDolls::setUp($expression)) { ?>";
+            return "<?php if (! app('RD\Directive')->setUp($expression)) { ?>";
         });
 
         Blade::directive('endcache', function() {
-            return "<?php } echo RD\Caching\RussianDolls::tearDown() ?>";
+            return "<?php } echo app('RD\Directive')->tearDown() ?>";
         });
     }
 }
