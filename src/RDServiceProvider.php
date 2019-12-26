@@ -15,7 +15,7 @@ class RDServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(Directive::class, function() {
-            return new Directive();
+            return new Directive(new Cache(app('cache.store')));
         });
     }
 
