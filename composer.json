@@ -4,14 +4,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "adnan ahmady",
+            "name": "adnanahmady",
             "email": "adnan.ahmady1394@gmail.com"
         }
     ],
     "version": "1.0.0",
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.2",
         "illuminate/support": "^6.0"
     },
     "autoload": {
