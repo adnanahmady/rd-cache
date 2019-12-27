@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de47f9fcbdc8a910c6e0e16c7fad3ab3",
+    "content-hash": "99f752593e61eefcf214889249c07e32",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1377,12 +1377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2"
+                "reference": "625e2b2ec291bd47e388bc0766199bb4b4ae9345"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
-                "reference": "7870c78da3c5e4883eaef36ae47853ebb3cb86f2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/625e2b2ec291bd47e388bc0766199bb4b4ae9345",
+                "reference": "625e2b2ec291bd47e388bc0766199bb4b4ae9345",
                 "shasum": ""
             },
             "require": {
@@ -1452,7 +1452,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-12-25T14:49:39+00:00"
+            "time": "2019-12-27T08:57:43+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
