@@ -5,6 +5,11 @@ namespace RD;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class RDServiceProvider
+ *
+ * @package RD
+ */
 class RDServiceProvider extends ServiceProvider
 {
     /**
@@ -14,7 +19,7 @@ class RDServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(Directive::class, function() {
+        $this->app->singleton(Directive::class, function () {
             return new Directive(new Cache(app('cache.store')));
         });
     }
@@ -30,7 +35,7 @@ class RDServiceProvider extends ServiceProvider
             return "<?php if (! app('RD\Directive')->setUp($expression)) { ?>";
         });
 
-        Blade::directive('endcache', function() {
+        Blade::directive('endcache', function () {
             return "<?php } echo app('RD\Directive')->tearDown() ?>";
         });
     }
